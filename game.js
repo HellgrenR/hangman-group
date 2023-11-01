@@ -16,6 +16,13 @@ export default class Game {
     }
   }
 
+  displayWord() {
+    let display = []
+    for (let i = 0; i < this.secretWord.wordLength; i++) {
+      display.push("_ ")
+    }
+  }
+
   guessLetter(letter) {
     this.secretWord.isLetterInWord()
   }
