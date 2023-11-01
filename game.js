@@ -1,11 +1,19 @@
 import Player from "./player.js"
 
-let player = []
 
-player.push(new Player("Pelle"))
-console.log(player[0])
+export default class Game {
 
+  players = []
 
+  constructor() {
+  }
+
+  startGame() {
+    players.push(new Player("Pelle"))
+    
+  }
+
+}
 
 
 
