@@ -43,6 +43,14 @@ export default class Game {
     }
   }
 
+  checkIfLost() {
+
+  }
+
+  checkIfWon() {
+    
+  }
+
 }
 
 
