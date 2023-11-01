@@ -26,6 +26,10 @@ export default class Game {
     }
   }
 
+  displayGallows() {
+    console.log(this.gallows)
+  }
+
   guessLetter(letter) {
     if (letter.length > 1 || letter.length < 1) {
       if (this.secretWord.isLetterInWord()) {
