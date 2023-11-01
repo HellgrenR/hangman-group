@@ -4,10 +4,10 @@ import SecretWord from "./secretword.js"
 export default class Game {
 
   players = []
-  #secretWord
+  secretWord
 
   constructor(word) {
-    this.#secretWord = new SecretWord(word)
+    this.secretWord = new SecretWord(word)
   }
 
   addPlayers(...names) {
@@ -16,6 +16,9 @@ export default class Game {
     }
   }
 
+  guessLetter(letter) {
+    this.secretWord.isLetterInWord()
+  }
 
 }
 
