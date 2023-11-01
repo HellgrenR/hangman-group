@@ -1,27 +1,21 @@
 import Player from "./player.js"
-
+import SecretWord from "./secretword.js"
 
 export default class Game {
 
   players = []
+  #secretWord
 
-  constructor() {
-  }
-
-  startGame(...names) {
-    this.addPlayers(...names)
-    
+  constructor(word) {
+    this.#secretWord = new SecretWord(word)
   }
 
   addPlayers(...names) {
-    if (names.length < 2) {
-      console.log("Du måste minst ha två spelare")
-    } else {
-      for (let i = 0; i < names.length; i++) {
-        this.players.push(new Player(names))
-      }
+    for (let i = 0; i < names.length; i++) {
+      this.players.push(new Player(names))
     }
   }
+
 
 }
 
