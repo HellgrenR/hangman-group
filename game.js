@@ -27,7 +27,7 @@ export default class Game {
   }
 
   displayGallows() {
-    console.log(this.gallows)
+    console.log(this.gallows) // är nog wonky
   }
 
   guessLetter(letter) {
